@@ -72,7 +72,6 @@ aside a {
 /* #region || ASIDE TOP ||*/
 .aside-top {
     height: 90%;
-    position: relative;
 }
 .aside-top>img { /* Logo */
     width: 150px;
@@ -107,14 +106,20 @@ aside a {
     overflow-y: auto;
     height: 63%;
 }
+
+.aside-top-xs {
+    display: none;
+}
+.aside-bottom-xs {
+    display: none;
+}
 /* #endregion ASIDE TOP*/
 
 /* #region || ASIDE BOTTOM ||*/
 .aside-bottom {
     height: 90px;
     background-color: black;
-    position: relative;
-    z-index: 2;
+    z-index: 5;
 }
 .aside-bottom h4 {
     padding: 10px 0;
@@ -139,6 +144,36 @@ aside a {
     padding: 15px 0;
 }
 /* #endregion ASIDE BOTTOM*/
+
+/* #region || ASIDE XS ||*/
+.aside-top-xs {
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+    height: 90%;
+}
+.aside-top-xs img {
+    width: 20px;
+}
+.aside-top-xs img:first-child {
+    width: 25px;
+}
+.aside-bottom-xs {
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+}
+.aside-bottom-xs a img {
+    width: 20px;
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: #7D7F84;
+    border-radius: 50%;
+}
+/* #endregion ASIDE XS*/
+
 /* #endregion ASIDE*/
 
 /* #region || MAIN ||*/
@@ -174,8 +209,8 @@ nav.top .btn {
     width: 100%;
     padding-top: 90px;
 }
-/* #region || NAV CONTENT ||*/
 
+/* #region || NAV CONTENT ||*/
 nav.content {
     text-transform: uppercase;
     text-align: center;
@@ -186,7 +221,7 @@ nav.content ul {
 nav.content li {
     display: inline-block;
     padding-right: 1.5%;
-    padding-top: 1%;
+    padding-top: 3%;
     font-size: 14px;
 }
 /* #endregion NAV CONTENT*/
@@ -253,11 +288,13 @@ footer {
 .player-left h5 a {
     color: #7D7F84;
 }
+
 .player-left i {
     font-size: 20px;
+    display: inline-block;
 }
 .player-left i:last-child {
-    margin-left: 3%;
+    margin-left: 2vw;
 }
 /* #endregion PLAYER LEFT*/
 
@@ -270,9 +307,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4%;
 }
 .fa-circle-play {
-    font-size: 40px;
+    font-size: 35px;
     margin: 0 5%;
 }
 .player-center i:first-child {
@@ -300,6 +338,9 @@ footer {
     height: 5px;
     border-radius: 10px;
 }
+.time {
+    font-size: 10px;
+}
 /* #endregion PLAYER CENTER */
 
 /* #region || PLAYER RIGHT ||*/
@@ -312,7 +353,7 @@ footer {
 .player-right .grey-bar {
     width: 25%;
     background-color: #5A5A5A;
-    min-width: 130px;
+    min-width: 90px;
 }
 .player-right .white-bar {
     background-color: #C1C1C1;
@@ -323,16 +364,8 @@ footer {
 /* #endregion PLAYER*/
 
 /* #region || MEDIA QUERIES ||*/
-/* || XS || */
-@media screen and (max-width:576px) {
-    
-}
-/* || S || */
-@media screen and (min-width:576px) {
-    
-}
 /* || MD || */
-@media screen and (min-width:768px) {
+@media screen and (max-width:992px) {
     .card-container {
         flex-flow: row wrap;
     }
@@ -341,8 +374,46 @@ footer {
         margin-top: 2%;
     }
 }
-/* || LG || */
-@media screen and (min-width:992px) {
-    
+/* || S || */
+@media screen and (max-width:768px) {
+    .card {
+        width: calc(100% / 2 - 1%);
+        margin-top: 2%;
+    }
+    .player-bar i {
+        display: block;
+    }
+    .player-left i:last-child {
+        margin-left: 0;
+        margin-top: 3px;
+    }
+}
+
+/* || XS || */
+@media screen and (max-width:576px) {
+    main {
+        width: calc(100% - 60px);
+    }
+    nav.top {
+        width: calc(100% - 60px);
+    }
+    aside {
+        width: 60px;
+    }
+    .aside-container {
+        padding: 4px 0;
+    }
+    .aside-top {
+        display: none;
+    }
+    .aside-bottom {
+        display: none;
+    }
+    .aside-top-xs {
+        display: flex;
+    }
+    .aside-bottom-xs {
+        display: flex;
+    }
 }
 /* #endregion MEDIA QUERIES*/

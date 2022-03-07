@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.dubug {
+    border: 1px solid white;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.wrapper {
+    height: 100vh;
+    width: 100%;
+}
+
+/* Elenco effetti da mettere: 
+Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va sopra col mouse. Il bottone Effettua Upgrade si deve ingrandire. Alle playlist sull'hover deve comparire il coso con il simbolo play. Alla barra sotto dei minuti della canzone, con hover diventa verde e appare il pallino del "fino a dove si è arrivati", stessa cosa vol volume  */
+
+/* #region || WRAPPER CONTENT ||*/
+.wrapper-content {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* #region || ASIDE ||*/
+aside {
+    width: 230px;
+}
+
+/* #endregion */
+
+/* #region || MAIN ||*/
+main {
+    width: calc(100% - 230px);
+    height: 100%;
+}
+nav .top {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.main-content {
+    height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    padding-top: 90px;
+}
+/* #endregion */
+/* #endregion */
+
+/* #region || FOOTER ||*/
+footer {
+    height: 90px;
+    width: 100%;
+    display: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #2B262A;
+    
+}
+.player-bar {
+    display: flex;    
+}
+/* #endregion */

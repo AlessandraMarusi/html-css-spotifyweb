@@ -20,6 +20,10 @@ body {
     height: 100vh;
     width: 100%;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
 
 /* Elenco effetti da mettere: 
 Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va sopra col mouse. Il bottone Effettua Upgrade si deve ingrandire. Alle playlist sull'hover deve comparire il coso con il simbolo play. Alla barra sotto dei minuti della canzone, con hover diventa verde e appare il pallino del "fino a dove si è arrivati", stessa cosa vol volume  */
@@ -43,13 +47,24 @@ aside {
 main {
     width: calc(100% - 230px);
     height: 100%;
+    background-color: #141922;
 }
-nav .top {
-    width: 100%;
+nav.top {
+    width: calc(100% - 230px);
     height: 90px;
     position: fixed;
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
+    text-align: right;
+    vertical-align: bottom;
+    padding-top: 35px;
+}
+nav.top .btn {
+    padding: 10px 35px;
+    margin-right: 40px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
 }
 .main-content {
     height: 100%;

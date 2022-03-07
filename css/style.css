@@ -36,6 +36,9 @@ h3 {
 ul {
     list-style-type: none;
 }
+.text-white {
+    color: white;
+}
 
 /* #endregion */
 
@@ -214,9 +217,98 @@ footer {
     z-index: 2;
 }
 .player-bar {
-    display: flex;    
+    display: flex;
+    flex-flow: row nowrap;    
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
 }
-.footer-left img {
-    width: 50px;
+.player-left, .player-center, .player-right {
+    width: calc(100% / 3);
 }
-/* #endregion */
+/* #region || PLAYER LEFT ||*/
+.player-left {
+    display: flex;
+    align-items: center;
+    color: #7D7F84;
+}
+.player-left img {
+    width: 8%;
+}
+.player-info-song {
+    display: inline-block;
+    margin: 0 50px 0 17px;
+    color: white;
+}
+.player-left h5 a {
+    color: #7D7F84;
+}
+.player-left i {
+    font-size: 20px;
+}
+.player-left i:last-child {
+    margin-left: 3%;
+}
+/* #endregion PLAYER LEFT*/
+
+/* #region || PLAYER CENTER */
+.player-center-icons {
+    font-size: 20px;
+    line-height: 0.4;
+    text-align: center;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-circle-play {
+    font-size: 40px;
+    margin: 0 5%;
+}
+.player-center i:first-child {
+    margin-right: 3%;
+}
+.player-center i:last-child {
+    margin-left: 3%;
+}
+.player-center-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+}
+.player-center .grey-bar {
+    width: 80%;
+    background-color: #5A5A5A;
+    display: inline-block;
+}
+.player-center .white-bar {
+    width: 15%;
+    background-color: #C1C1C1;     
+}
+.white-bar, .grey-bar {
+    height: 5px;
+    border-radius: 10px;
+}
+/* #endregion PLAYER CENTER */
+
+/* #region || PLAYER RIGHT ||*/
+.player-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3% ;
+}
+.player-right .grey-bar {
+    width: 25%;
+    background-color: #5A5A5A;
+}
+.player-right .white-bar {
+    background-color: #C1C1C1;
+    width: 20%;
+}
+/* #endregion PLAYER RIGHT*/
+
+/* #endregion PLAYER*/

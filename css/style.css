@@ -33,6 +33,9 @@ nav.content a, h4 {
 h3 {
     padding: 4%;
 }
+ul {
+    list-style-type: none;
+}
 
 /* #endregion */
 
@@ -40,7 +43,7 @@ h3 {
 /* Elenco effetti da mettere: 
 Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va sopra col mouse. Il bottone Effettua Upgrade si deve ingrandire. Alle playlist sull'hover deve comparire il coso con il simbolo play. Alla barra sotto dei minuti della canzone, con hover diventa verde e appare il pallino del "fino a dove si è arrivati", stessa cosa vol volume  */
 
-/* #region ||  ||*/
+/* #region || WRAPPER CONTENT ||*/
 .wrapper-content {
     width: 100%;
     height: calc(100% - 90px);
@@ -52,8 +55,84 @@ Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va 
 aside {
     width: 230px;
 }
+aside a {
+    color: #7D7F84;
+}
+.aside-container {
+    padding: 25px;
+    height: 100%;
+}
+/* #region || ASIDE TOP ||*/
+.aside-top {
+    height: 90%;
+    position: relative;
+}
+.aside-top>img { /* Logo */
+    width: 150px;
+    padding-bottom: 8px;
+}
+.aside-top ul {
+    padding-bottom: 20px;
+}
+.aside-top ul li {
+    padding: 10px 0;  
+}
+.aside-top a {
+    display: flex;
+    align-items: center;
+}
+.aside-top ul img {
+    width: 30px;
+    margin-right: 8px;
+}
 
-/* #endregion */
+.square {
+    width: 40px;
+    height: 40px;
+    background-color: #7D7F84;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    margin-right: 8px;
+}
+.playlist-list {
+    overflow-y: auto;
+    height: 63%;
+}
+/* #endregion ASIDE TOP*/
+
+/* #region || ASIDE BOTTOM ||*/
+.aside-bottom {
+    height: 90px;
+    background-color: black;
+    position: relative;
+    z-index: 2;
+}
+.aside-bottom h4 {
+    padding: 10px 0;
+    border-bottom: 1px solid #7D7F84;
+    line-height: 0.1px;
+}
+.aside-bottom h4 img {
+    width: 18px;
+    margin-right: 10px;
+    transform: translateY(4px);
+}
+.aside-bottom h3 img {
+    width: 25px;
+    height: 25px;
+    background-color: #7D7F84;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.aside-bottom h3 {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+/* #endregion ASIDE BOTTOM*/
+/* #endregion ASIDE*/
 
 /* #region || MAIN ||*/
 main {
@@ -128,13 +207,16 @@ section {
 footer {
     height: 90px;
     width: 100%;
-    display: fixed;
+    position: fixed;
     bottom: 0;
     left: 0;
     background-color: #2B262A;
-    
+    z-index: 2;
 }
 .player-bar {
     display: flex;    
+}
+.footer-left img {
+    width: 50px;
 }
 /* #endregion */

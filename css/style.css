@@ -32,6 +32,10 @@ nav.content a, h4 {
 }
 h3 {
     padding: 4%;
+    font-size: 15px;
+}
+h4 {
+    font-size: 13px;
 }
 ul {
     list-style-type: none;
@@ -182,6 +186,8 @@ nav.content ul {
 nav.content li {
     display: inline-block;
     padding-right: 1.5%;
+    padding-top: 1%;
+    font-size: 14px;
 }
 /* #endregion NAV CONTENT*/
 section {
@@ -315,3 +321,28 @@ footer {
 /* #endregion PLAYER RIGHT*/
 
 /* #endregion PLAYER*/
+
+/* #region || MEDIA QUERIES ||*/
+/* || XS || */
+@media screen and (max-width:576px) {
+    
+}
+/* || S || */
+@media screen and (min-width:576px) {
+    
+}
+/* || MD || */
+@media screen and (min-width:768px) {
+    .card-container {
+        flex-flow: row wrap;
+    }
+    .card {
+        width: calc(100% / 4 - 1%);
+        margin-top: 2%;
+    }
+}
+/* || LG || */
+@media screen and (min-width:992px) {
+    
+}
+/* #endregion MEDIA QUERIES*/

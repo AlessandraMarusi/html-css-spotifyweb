@@ -22,15 +22,25 @@ body {
     height: 100vh;
     width: 100%;
 }
+/* #region || TEXT FORMAT ||*/
 a {
     color: white;
     text-decoration: none;
 }
+nav.content a, h4 {
+    color: #7D7F84;
+}
+h3 {
+    padding: 4%;
+}
+
+/* #endregion */
+
 
 /* Elenco effetti da mettere: 
 Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va sopra col mouse. Il bottone Effettua Upgrade si deve ingrandire. Alle playlist sull'hover deve comparire il coso con il simbolo play. Alla barra sotto dei minuti della canzone, con hover diventa verde e appare il pallino del "fino a dove si è arrivati", stessa cosa vol volume  */
 
-/* #region || WRAPPER CONTENT ||*/
+/* #region ||  ||*/
 .wrapper-content {
     width: 100%;
     height: calc(100% - 90px);
@@ -51,6 +61,8 @@ main {
     height: 100%;
     background-color: #141922;
 }
+/* #region || NAV TOP ||*/
+
 nav.top {
     width: calc(100% - 230px);
     height: 90px;
@@ -68,12 +80,16 @@ nav.top .btn {
     border-radius: 30px;
     text-transform: uppercase;
 }
+/* #endregion NAV TOP*/
+
 .main-content {
     height: 100%;
     overflow-y: auto;
     width: 100%;
     padding-top: 90px;
 }
+/* #region || NAV CONTENT ||*/
+
 nav.content {
     text-transform: uppercase;
     text-align: center;
@@ -85,11 +101,28 @@ nav.content li {
     display: inline-block;
     padding-right: 1.5%;
 }
-nav.content a {
-    color: #7D7F84;
+/* #endregion NAV CONTENT*/
+section {
+    padding: 2% 2% 0% 2%;
 }
-/* #endregion */
-/* #endregion */
+.card-container {
+    padding: 2% 0% 0%;
+    display: flex;
+}
+.card {
+    width: calc(100% / 6);
+    text-align: center;
+    margin-right: 1%;
+}
+.card img{
+    width: 100%;
+}
+.circle-img {
+    border-radius: 50%;
+}
+
+/* #endregion MAIN*/
+/* #endregion WRAPPER CONTENT*/
 
 /* #region || FOOTER ||*/
 footer {

@@ -15,6 +15,8 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 .wrapper {
     height: 100vh;
@@ -71,6 +73,20 @@ nav.top .btn {
     overflow-y: auto;
     width: 100%;
     padding-top: 90px;
+}
+nav.content {
+    text-transform: uppercase;
+    text-align: center;
+}
+nav.content ul {
+    padding-top: 2%;
+}
+nav.content li {
+    display: inline-block;
+    padding-right: 1.5%;
+}
+nav.content a {
+    color: #7D7F84;
 }
 /* #endregion */
 /* #endregion */

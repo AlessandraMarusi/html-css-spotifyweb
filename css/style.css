@@ -467,7 +467,7 @@ footer .fa-circle-play, .fa-circle-pause {
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    right: -20%;
+    right: -12%;
     top: -100%;
     display: none;
 }

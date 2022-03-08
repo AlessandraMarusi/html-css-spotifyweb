@@ -252,7 +252,7 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.5vw;
+    font-size: 55px;
     filter: opacity(0);
     margin: 0;
 }
@@ -442,6 +442,15 @@ li a:hover {
 .card-img:hover img {
     filter: opacity(0.5);
     transition: 1s;
+}
+nav.top .btn:hover {
+    padding: 15px 45px;
+}
+.player-left-icons i:first-child:hover {
+    color: red;
+}
+.player-left-icons i:last-child:hover {
+    color: #C1C1C1;
 }
 /* #endregion EFFECTS */
 

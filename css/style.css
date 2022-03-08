@@ -338,14 +338,25 @@ footer {
     align-items: center;
     margin-bottom: 4%;
 }
-.fa-circle-play {
-    font-size: 35px;
+.start-pause {
+    position: relative;
+    width: 35px;
+    height: 35px;
     margin: 0 5%;
 }
-.player-center i:first-child {
+.fa-circle-play, .fa-circle-pause {
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.fa-circle-pause {
+    display: none;
+}
+.player-center-icons>i:first-child {
     margin-right: 3%;
 }
-.player-center i:last-child {
+.player-center-icons>i:last-child {
     margin-left: 3%;
 }
 .player-center-bar {
@@ -464,6 +475,9 @@ li a:hover {
 nav.top .btn:hover {
     padding: 15px 45px;
 }
+.player-left h5:hover {
+    text-decoration: underline;
+}
 .player-left-icons i:first-child:hover {
     color: red;
 }
@@ -482,6 +496,15 @@ nav.top .btn:hover {
 .dropup-volume-content:hover .bar-dot {
     display: block;
 } 
+.player-center i:hover  {
+    transform: scale(1.2);
+}
+.start-pause:active .fa-circle-pause {
+    display: block;
+}
+.start-pause:active .fa-circle-play {
+    display: none;
+}
 /* #endregion EFFECTS */
 
 /* #region || MEDIA QUERIES ||*/

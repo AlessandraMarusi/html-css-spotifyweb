@@ -71,7 +71,7 @@ aside a {
 }
 /* #region || ASIDE TOP ||*/
 .aside-top {
-    height: 90%;
+    height: calc(100% - 60px);
 }
 .aside-top>img { /* Logo */
     width: 150px;
@@ -151,7 +151,7 @@ aside a {
     flex-flow: column wrap;
     align-items: center;
     gap: 10px;
-    height: 90%;
+    height: calc(100% - 60px);
 }
 .aside-top-xs img {
     width: 20px;
@@ -415,6 +415,12 @@ footer {
     }
     .aside-bottom-xs {
         display: flex;
+    }
+}
+
+@media screen and (max-height: 625px) {
+    .aside-bottom {
+        display: none;
     }
 }
 /* #endregion MEDIA QUERIES*/

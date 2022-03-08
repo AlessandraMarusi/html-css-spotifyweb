@@ -366,6 +366,7 @@ footer {
 .white-bar, .grey-bar {
     height: 5px;
     border-radius: 10px;
+    position: relative;
 }
 .time {
     font-size: 10px;
@@ -390,6 +391,7 @@ footer {
 .player-right .white-bar {
     background-color: #C1C1C1;
     width: 20%;
+    position: relative;
 }
 .dropup-volume {
     display: none;
@@ -420,11 +422,27 @@ footer {
     position: absolute;
     bottom: 0;
 }
+.white-bar-dropup .bar-dot {
+    position: relative;
+    top: 0;
+    right: 130%;
+}
 .dropup-volume:hover .dropup-volume-content {
     display: block;
 }
+
 /* #endregion PLAYER RIGHT*/
 
+.bar-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: -30%;
+    top: -100%;
+    display: none;
+}
 /* #endregion PLAYER*/
 
 /* #region || EFFECTS ||*/
@@ -452,6 +470,18 @@ nav.top .btn:hover {
 .player-left-icons i:last-child:hover {
     color: #C1C1C1;
 }
+.grey-bar:hover .white-bar {
+    background-color: greenyellow;
+}
+.grey-bar:hover .bar-dot {
+    display: inline;
+}
+.dropup-volume-content:hover .white-bar-dropup {
+    background-color: greenyellow;
+}
+.dropup-volume-content:hover .bar-dot {
+    display: block;
+} 
 /* #endregion EFFECTS */
 
 /* #region || MEDIA QUERIES ||*/

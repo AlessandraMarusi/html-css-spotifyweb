@@ -196,6 +196,7 @@ nav.top {
     padding-top: 35px;
 }
 nav.top .btn {
+    font-size: 14px;
     padding: 10px 35px;
     margin-right: 40px;
     border: 1px solid white;
@@ -304,8 +305,9 @@ footer {
 .dropup-content-img {
     display: none;
     position: absolute;
-    bottom: 50px;
-    background-color: #2B262A;
+    bottom: 55px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -393,14 +395,14 @@ footer {
     z-index: 1;
 }
 .grey-bar-dropup {
-    height: 25vh;
+    height: 20vh;
     width: 4px;
     background-color: #5A5A5A;
     border-radius: 10px;
     position: relative;
 }
 .white-bar-dropup {
-    height: 7vh;
+    height: 4vh;
     width: 4px;
     background-color: #C1C1C1;
     border-radius: 10px;
@@ -442,6 +444,9 @@ footer {
 
 /* || XS || */
 @media screen and (max-width:576px) {
+    nav.top {
+        text-align: center;
+    }
     main {
         width: calc(100% - 60px);
     }

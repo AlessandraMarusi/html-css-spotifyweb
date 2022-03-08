@@ -22,6 +22,7 @@ body {
     height: 100vh;
     width: 100%;
 }
+
 /* #region || TEXT FORMAT ||*/
 a {
     color: white;
@@ -43,13 +44,7 @@ ul {
 .text-white {
     color: white;
 }
-
 /* #endregion */
-
-
-/* Elenco effetti da mettere: 
-Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va sopra col mouse. Il bottone Effettua Upgrade si deve ingrandire. Alle playlist sull'hover deve comparire il coso con il simbolo play. Alla barra sotto dei minuti della canzone, con hover diventa verde e appare il pallino del "fino a dove si è arrivati", stessa cosa vol volume  */
-
 
 /* #region || WRAPPER CONTENT ||*/
 .wrapper-content {
@@ -58,6 +53,7 @@ Home attivo, tutti i vari elementi cliccabili si devono illuminare quando si va 
     display: flex;
     flex-flow: row nowrap;
 }
+.active-green
 
 /* #region || ASIDE ||*/
 aside {
@@ -91,6 +87,16 @@ aside a {
 .aside-top ul img {
     width: 30px;
     margin-right: 8px;
+}
+.aside-top li:first-child {
+    position: relative;
+}
+.aside-top .active-green {
+    width: 4px;
+    height: 80%;
+    position: absolute;
+    left: -24px;
+    top: 10%;
 }
 
 .square {
@@ -184,6 +190,10 @@ main {
     height: 100%;
     background-color: #141922;
 }
+.active-green {
+    background-color: greenyellow;
+    border-radius: 20%;
+}
 /* #region || NAV TOP ||*/
 
 nav.top {
@@ -224,7 +234,14 @@ nav.content li {
     padding-top: 1%;
     font-size: 22px;
 }
+nav.content .active-green {
+    width: 30%;
+    height: 3px;
+    margin: 1% auto;
+}
 /* #endregion NAV CONTENT*/
+
+/* #region || SECTIONS ||*/
 section {
     padding: 2% 2% 0% 2%;
 }
@@ -256,6 +273,7 @@ section {
     filter: opacity(0);
     margin: 0;
 }
+/* #endregion SECTIONS*/
 
 /* #endregion MAIN*/
 /* #endregion WRAPPER CONTENT*/
@@ -450,7 +468,7 @@ footer {
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    right: -30%;
+    right: -20%;
     top: -100%;
     display: none;
 }
@@ -486,18 +504,21 @@ nav.top .btn:hover {
 }
 .grey-bar:hover .white-bar {
     background-color: greenyellow;
+    cursor: pointer;
 }
 .grey-bar:hover .bar-dot {
     display: inline;
 }
 .dropup-volume-content:hover .white-bar-dropup {
     background-color: greenyellow;
+    cursor: pointer;
 }
 .dropup-volume-content:hover .bar-dot {
     display: block;
 } 
-.player-center i:hover  {
+.player-bar i:hover  {
     transform: scale(1.2);
+    cursor: pointer;
 }
 .start-pause:active .fa-circle-pause {
     display: block;

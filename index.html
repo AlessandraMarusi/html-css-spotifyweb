@@ -14,20 +14,29 @@
 <body>
     <div class="wrapper">
         <div class="wrapper-content">
-            <!-- ASIDE - MENU LATERALE -->
+            <!-- ASIDE -- MENU LATERALE -->
             <aside>
                 <div class="aside-container">
                     <!-- ASIDE TOP -->
                     <div class="aside-top">
                         <img src="img/logo.svg" alt="">
                         <ul class="icon-list">
-                            <li><a class="text-white" href="#"><img src="img/home.svg" alt="Icona Home"> Home</a></li>
-                            <li><a href="#"><img src="img/search.svg" alt="Icona Cerca"> Cerca</a></li>
-                            <li><a href="#"><img src="img/libreria.svg" alt="Icona Libreria"> La tua libreria</a></li>
+                            <li>
+                                <a class="text-white" href="#"><img src="img/home.svg" alt="Icona Home"> Home</a>
+                                <div class="active-green"></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/search.svg" alt="Icona Cerca"> Cerca</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/libreria.svg" alt="Icona Libreria"> La tua libreria</a>
+                            </li>
                         </ul>
                         <ul class="playlist-list">
                             <li><span class="text-white">PLAYLIST</span></li>
-                            <li><a href="#"><div class="square">+</div> Crea Playlist</a></li>
+                            <li>
+                                <a href="#"><div class="square">+</div> Crea Playlist</a>
+                            </li>
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
                             <li><a href="#">Nome Playlist</a></li>
@@ -54,19 +63,19 @@
                         <img class="circle" src="img/profile.svg" alt="">
                     </div>
                 </div>
-                
             </aside>
-            <!-- MAIN - CONTENUTO PRINCIPALE -->
+            <!-- MAIN -- CONTENUTO PRINCIPALE -->
             <main>
-                <!-- NAV.TOP - NAVBAR DEL MAIN -->
+                <!-- NAV.TOP -- NAVBAR DEL MAIN -->
                 <nav class="top">
                         <a class="btn" href="#">Effettua l'upgrade</a>
                 </nav>
                 <!-- MAIN CONTENT -->
                 <div class="main-content">
+                    <!-- NAV CONTENT -->
                     <nav class="content">
                         <ul>
-                            <li><a href="">In evidenza</a></li>
+                            <li><a href="">In evidenza</a><div class="active-green"></div></li>
                             <li><a href="">Podcast</a></li>
                             <li><a href="">Classifiche</a></li>
                             <li><a href="">Generi e mood</a></li>
@@ -74,7 +83,7 @@
                             <li><a href="">Scopri</a></li>
                         </ul>
                     </nav>
-                    <!-- || PRIMA SEZIONE || -->
+                    <!-- PRIMA SEZIONE -->
                     <section>
                         <h2>Recently played</h2>
                         <div class="card-container">
@@ -128,7 +137,7 @@
                             </div>
                         </div>
                     </section>
-                    <!-- || SECONDA SEZIONE || -->
+                    <!-- SECONDA SEZIONE -->
                     <section>
                         <h2>Creato per Jonh Doe</h2>
                         <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
@@ -149,7 +158,7 @@
                             </div>
                         </div>
                     </section>
-                    <!-- || TERZA SEZIONE || -->
+                    <!-- TERZA SEZIONE -->
                     <section>
                         <h2>Artisti più popolari</h2>
                         <h4>Più ascolti, più accurati saranno i suggerimenti.</h4>
@@ -170,11 +179,12 @@
                             </div>
                         </div>
                     </section>
-
+                <!-- /MAIN CONTENT -->
                 </div>
             </main>
+        <!-- /WRAPPER CONTENT -->
         </div>
-        <!-- FOOTER - PLAYER -->
+        <!-- FOOTER -- PLAYER -->
         <footer>
             <div class="player-bar">
                  <div class="player-left">
@@ -241,6 +251,7 @@
                 </div>
             </div>
         </footer>
+    <!-- /WRAPPER -->
     </div>
     
 </body>

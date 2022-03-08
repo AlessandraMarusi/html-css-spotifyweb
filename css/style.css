@@ -269,9 +269,8 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 55px;
+    font-size: 5.5vw;
     filter: opacity(0);
-    margin: 0;
 }
 /* #endregion SECTIONS*/
 
@@ -362,7 +361,7 @@ footer {
     height: 35px;
     margin: 0 5%;
 }
-.fa-circle-play, .fa-circle-pause {
+footer .fa-circle-play, .fa-circle-pause {
     font-size: 35px;
     position: absolute;
     bottom: 0;
@@ -482,7 +481,7 @@ li a:hover {
     color: white;
 }
 .card-img:hover i {
-    display: inline;
+    display: block;
     filter: opacity(1);
     transition: 0.5s;
 }
@@ -545,6 +544,9 @@ nav.top .btn:hover {
     nav.content ul {
         padding-top: 2%;
     }
+    .card i {
+        font-size: 8vw;
+    }
 }
 /* || S || */
 @media screen and (max-width:768px) {
@@ -566,6 +568,9 @@ nav.top .btn:hover {
     nav.content ul {
         padding-bottom: 5%;
     }
+    .card i {
+        font-size: 12vw;
+    }
 }
 
 /* || XS || */
@@ -579,6 +584,9 @@ nav.top .btn:hover {
     nav.content li {
         font-size: 16px;
         padding-top: 5%;
+    }
+    .card i {
+        font-size: 15vw;
     }
     aside {
         width: 60px;
@@ -621,6 +629,7 @@ nav.top .btn:hover {
     }
 }
 
+/* || HEIGHT || */
 @media screen and (max-height: 625px) {
     .aside-bottom {
         display: none;

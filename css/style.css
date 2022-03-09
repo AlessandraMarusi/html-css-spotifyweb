@@ -16,7 +16,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
 }
 .wrapper {
     height: 100vh;
@@ -44,10 +44,17 @@ ul {
 .text-white {
     color: white;
 }
+.text-grey {
+    color: #7D7F84;
+}
 .active-green {
     background-color: greenyellow;
     opacity: 0;
 }
+.text-lighter {
+    font-weight: 400;
+}
+
 /* #endregion */
 
 /* #region || WRAPPER CONTENT ||*/

@@ -41,30 +41,27 @@ nav.playlist {
     align-items: center;
     font-weight: 400;
     color: #7D7F84;
+    gap: 1% ;
 }
 .head-row {
     border-bottom: 1px solid grey;
     height: 40px;
     margin-bottom: 15px;
-    
     text-transform: uppercase;
 }
 .column {
     width: 25%;
     height: 70px;
-    vertical-align: middle;
     display: flex;
     align-items: center;
+    justify-content: left;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 .column img {
     height: 50px;
 }
 .column-1 {
     width: 50%;
-    
     gap: 2% ;
 }
 .column-3 {
@@ -74,10 +71,21 @@ nav.playlist {
     width: 3%;
     justify-content: right;
 }
-.row h4 {
+.column-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.column-text h4 {
     color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .row a {
     color: #7D7F84;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 /* #endregion SONG LIST*/

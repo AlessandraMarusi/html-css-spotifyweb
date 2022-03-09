@@ -54,6 +54,9 @@ ul {
 .text-lighter {
     font-weight: 400;
 }
+.upper {
+    text-transform: uppercase;
+}
 
 /* #endregion */
 
@@ -543,7 +546,7 @@ nav.top .btn:hover {
 .player-left h5:hover {
     text-decoration: underline;
 }
-.player-left-icons i:first-child:hover, .player-left-icons-dropup i:first-child:hover {
+.fa-heart:hover {
     color: red;
 }
 .player-left-icons i:last-child:hover, .player-left-icons-dropup i:last-child:hover {
@@ -563,7 +566,7 @@ nav.top .btn:hover {
 .dropup-volume-content:hover .bar-dot {
     display: block;
 } 
-.player-bar i:hover  {
+.player-bar i:hover, .playlist-icon-bar-container i:hover  {
     transform: scale(1.2);
     cursor: pointer;
 }

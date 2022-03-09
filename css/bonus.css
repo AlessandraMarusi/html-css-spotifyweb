@@ -2,8 +2,8 @@
 nav.playlist {
     background-color: #252e3f;
 }
-.nav-playlist-container {
-    padding: 2%;
+.nav-playlist-container, .playlist-icon-bar-container, .song-list-container {
+    padding: 2% 2% 0%;
 }
 .nav-playlist-text  {
     display: inline-block;
@@ -18,6 +18,66 @@ nav.playlist {
 .nav-playlist-text h4 {
     color: white;
     padding-top: 2%;
-    
 }
 /* #endregion NAV PLAYLIST */
+
+/* #region || PLAYLIST ICON BAR ||*/
+.playlist-icon-bar-container {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.playlist-icon-bar-container i:first-child {
+    font-size: 50px;
+}
+/* #endregion PLAYLIST ICON BAR*/
+
+/* #region || SONG LIST ||*/
+.row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: #7D7F84;
+}
+.head-row {
+    border-bottom: 1px solid grey;
+    height: 40px;
+    margin-bottom: 15px;
+    
+    text-transform: uppercase;
+}
+.column {
+    width: 25%;
+    height: 70px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.column img {
+    height: 50px;
+}
+.column-1 {
+    width: 50%;
+    
+    gap: 2% ;
+}
+.column-3 {
+    width: 20%;
+}
+.column-4 {
+    width: 3%;
+    justify-content: right;
+}
+.row h4 {
+    color: white;
+}
+.row a {
+    color: #7D7F84;
+}
+/* #endregion SONG LIST*/

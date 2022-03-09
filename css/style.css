@@ -23,7 +23,7 @@ body {
     width: 100%;
 }
 
-/* #region || TEXT FORMAT ||*/
+/* #region || GENERAL ||*/
 a {
     color: white;
     text-decoration: none;
@@ -43,6 +43,10 @@ ul {
 }
 .text-white {
     color: white;
+}
+.active-green {
+    background-color: greenyellow;
+    opacity: 0;
 }
 /* #endregion */
 
@@ -97,7 +101,6 @@ aside a {
     position: absolute;
     left: -24px;
     top: 10%;
-    display: none;
 }
 .square {
     width: 35px;
@@ -190,10 +193,7 @@ main {
     height: 100%;
     background-color: #141922;
 }
-.active-green {
-    background-color: greenyellow;
-    border-radius: 20%;
-}
+
 /* #region || NAV TOP ||*/
 
 nav.top {
@@ -239,7 +239,7 @@ nav.content li {
 nav.content .active-green {
     width: 30%;
     height: 3px;
-    margin: 1% auto;
+    margin: 1px auto;
 }
 /* #endregion NAV CONTENT*/
 
@@ -486,6 +486,10 @@ a:hover {
 li a:hover {
     color: white;
 }
+nav.content li:hover .active-green {
+    opacity: 1;
+    
+}
 .card-img:hover i {
     display: block;
     filter: opacity(1);
@@ -499,7 +503,7 @@ nav.top .btn:hover {
     transform: scale(1.2);
 }
 .aside-top .icon-list li:hover .active-green {
-    display: inline-block;
+    opacity: 1;
 }
 .aside-top li:hover .square {
     background-color: white;

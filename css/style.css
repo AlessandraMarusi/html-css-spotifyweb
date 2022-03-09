@@ -604,6 +604,35 @@ nav.top .btn:hover {
     h4 {
         font-size: 15px;
     }
+    /* #region || BONUS.HTML ||*/
+    .nav-playlist-text h1 {
+        font-size: 35px;
+    }
+    nav.playlist img {
+        height: 220px;
+    }
+    nav.playlist {
+        height: 290px;
+    }
+    .playlist-icon-bar-container {
+        font-size: 25px;
+    }
+    .playlist-icon-bar-container i:first-child {
+        font-size: 45px;
+    }
+    .column-1 {
+        width: 60%;
+    }
+    .column-2 {
+        width: 30%;
+    }
+    .column-3 {
+        display: none;
+    }
+    .column-4 {
+        width: 10%;
+    }
+    /* #endregion BONUS.HTML */
 }
 /* || S || */
 @media screen and (max-width:768px) {
@@ -628,6 +657,26 @@ nav.top .btn:hover {
     .card i {
         font-size: 12vw;
     }
+    /* #region || BONUS.HTML ||*/
+    .nav-playlist-text h1 {
+        font-size: 30px;
+    }
+    .nav-playlist-text h4 {
+        font-size: 12px;
+    }
+    nav.playlist img {
+        height: 200px;
+    }
+    nav.playlist {
+        height: 270px;
+    }
+    .playlist-icon-bar-container {
+        font-size: 20px;
+    }
+    .playlist-icon-bar-container i:first-child {
+        font-size: 40px;
+    }
+    /* #endregion BONUS.HTML */
 }
 
 /* || XS || */

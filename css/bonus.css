@@ -1,3 +1,8 @@
+/* || TO DO LIST ||
+MEDIA QUERIES
+ACTIVE E HOVER EFFECTS
+*/
+
 /* #region || NAV PLAYLIST ||*/
 nav.playlist {
     background-color: #252e3f;
@@ -5,12 +10,25 @@ nav.playlist {
 .nav-playlist-container, .playlist-icon-bar-container, .song-list-container {
     padding: 2% 2% 0%;
 }
+nav.playlist {
+    height: 320px;
+}
+.nav-playlist-container {
+    padding: 35px 2%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+nav.playlist img {
+    height: 250px;
+}
 .nav-playlist-text  {
     display: inline-block;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 .nav-playlist-text h1 {
-    font-size: 100px;
+    font-size: 65px;
+    word-break: break-word;
 }
 .nav-playlist-text h4:first-child{
     text-transform: uppercase;

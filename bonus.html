@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bonus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93b7370090.js" crossorigin="anonymous"></script>
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <!-- ASIDE -- MENU LATERALE -->
+            <aside>
+                <div class="aside-container">
+                    <!-- ASIDE TOP -->
+                    <div class="aside-top">
+                        <img src="img/logo.svg" alt="">
+                        <ul class="icon-list">
+                            <li>
+                                <a class="text-white" href="#"><img src="img/home.svg" alt="Icona Home"> Home</a>
+                                <div class="active-green"></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/search.svg" alt="Icona Cerca"> Cerca</a>
+                                <div class="active-green"></div>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/libreria.svg" alt="Icona Libreria"> La tua libreria</a>
+                                <div class="active-green"></div>
+                            </li>
+                        </ul>
+                        <ul class="playlist-list">
+                            <li><span class="text-white">PLAYLIST</span></li>
+                            <li>
+                                <a href="#"><div class="square">+</div> Crea Playlist</a>
+                            </li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            <li><a href="#">Nome Playlist</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="aside-top-xs">
+                        <img src="img/logo-small.svg" alt="Logo Spotify">
+                        <a href="#"><img src="img/home.svg" alt="Icona Home"></a>
+                        <a href="#"><img src="img/search.svg" alt="Icona Search"></a>
+                        <a href="#"><img src="img/libreria.svg" alt="Icona libreria"></a>
+                    </div>
+                    <!-- ASIDE BOTTOM -->
+                    <div class="aside-bottom">
+                        <h4><a href="#"><img src="img/download.svg" alt="Icona download"> Installa app</a></h4>
+                        <h3><img src="img/profile.svg" alt=""> John Doe</h3>
+                    </div>
+                    <div class="aside-bottom-xs">
+                        <a href="#"><img src="img/download.svg" alt="Icona download"></a>
+                        <img class="circle" src="img/profile.svg" alt="">
+                    </div>
+                </div>
+            </aside>
+            <!-- MAIN -- CONTENUTO PRINCIPALE -->
+            <main>
+                <!-- NAV.TOP -- NAVBAR DEL MAIN -->
+                <nav class="top">
+                            <a class="btn" href="#">Effettua l'upgrade</a>
+                </nav>
+                <!-- MAIN CONTENT -->
+                <div class="main-content">
+                    <!-- NAV CONTENT -->
+                    <nav class="playlist">
+                        
+                    </nav>
+                    <!-- PRIMA SEZIONE -->
+                    <div class="playlist-icon-bar-container"></div>
+                    <div class="song-list-container"></div>
+
+                <!-- /MAIN CONTENT -->
+                </div>
+            </main>
+        <!-- /WRAPPER CONTENT -->
+        </div>
+        <!-- FOOTER -- PLAYER -->
+        <footer>
+            <div class="player-bar">
+                 <div class="player-left">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div class="dropup-img">
+                            <img src="img/sinister.jpeg" alt="">
+                            <div class="dropup-content-img">
+                                <div class="player-info-song"><h4><a href="#">Sinister</a></h4>
+                                    <h5><a href="#">Brano Nome</a></h5></div>
+                                <div class="player-left-icons-dropup">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <i class="fa-regular fa-folder"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-info-song"><h4><a href="#">Sinister</a></h4>
+                            <h5><a href="#">Brano Nome</a></h5></div>
+                        <div class="player-left-icons">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                </div>
+            <div class="player-center">
+                <div class="player-center-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <div class="start-pause">
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-pause"></i>
+                    </div>
+                    
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="player-center-bar">
+                    <span class="time">0:25</span>
+                    <div class="grey-bar">
+                        <div class="white-bar">
+                            <div class="bar-dot"></div>
+                        </div>
+                    </div>
+                    <span class="time">4:35</span>
+                </div>
+            </div>
+                <div class="player-right">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="dropup-volume">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="dropup-volume-content">
+                            <div class="grey-bar-dropup">
+                                <div class="white-bar-dropup">
+                                    <div class="bar-dot"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grey-bar">
+                        <div class="white-bar">
+                            <div class="bar-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!-- /WRAPPER -->
+    </div>
+    
+</body>
+</html>

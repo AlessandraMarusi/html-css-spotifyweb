@@ -576,6 +576,16 @@ nav.top .btn:hover {
 .start-pause:active .fa-circle-play {
     display: none;
 }
+/* BONUS EFFECTS */
+.row:hover {
+    background-color: #1b222e;
+}
+.row:hover .play-song {
+    display: inline-block;
+}
+.row:hover .number-song {
+    opacity: 0;
+}
 /* #endregion EFFECTS */
 
 /* #region || MEDIA QUERIES ||*/

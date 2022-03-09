@@ -52,7 +52,7 @@ nav.playlist img {
 /* #endregion PLAYLIST ICON BAR*/
 
 /* #region || SONG LIST ||*/
-.row {
+.row, .head-row {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -60,6 +60,8 @@ nav.playlist img {
     font-weight: 400;
     color: #7D7F84;
     gap: 1% ;
+    position: relative;
+    padding: 0 1%;
 }
 .head-row {
     border-bottom: 1px solid grey;
@@ -86,8 +88,12 @@ nav.playlist img {
     width: 20%;
 }
 .column-4 {
-    width: 3%;
+    width: 5%;
     justify-content: right;
+}
+.play-song {
+    position: absolute;
+    display: none;
 }
 .column-text {
     text-overflow: ellipsis;
@@ -96,6 +102,11 @@ nav.playlist img {
 }
 .column-text h4 {
     color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.column-text h5 {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;

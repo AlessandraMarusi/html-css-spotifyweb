@@ -250,11 +250,15 @@ section {
 .card-container {
     padding: 2% 0% 0%;
     display: flex;
+    flex-flow: row wrap;
 }
 .card {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 1%);
     text-align: center;
     margin-right: 1%;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #1b222e;
 }
 .card img{
     width: 100%;
@@ -273,7 +277,15 @@ section {
     transform: translate(-50%, -50%);
     font-size: 5.5vw;
     filter: opacity(0);
+    height: 50%; /* Per dare la stessa altezza alle due icone */
 }
+.card h3, .card h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+}
+
 /* #endregion SECTIONS*/
 
 /* #endregion MAIN*/
@@ -335,7 +347,7 @@ footer {
 .dropup-content-img {
     display: none;
     position: absolute;
-    bottom: 55px;
+    bottom: 53px;
     background-color: rgba(0,0,0,0.8);
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -488,13 +500,23 @@ li a:hover {
 }
 nav.content li:hover .active-green {
     opacity: 1;
-    
 }
-.card-img:hover i {
-    display: block;
+.card:hover {
+    background-color: #181818;
+    transition: 1s;
+}
+.card-img:hover .fa-circle-play {
     filter: opacity(1);
     transition: 0.5s;
 }
+.card-img:active .fa-circle-pause {
+    filter: opacity(1);
+    transition: 0.5;
+}
+.card-img:active .fa-circle-play {
+    opacity: 0;
+}
+
 .card-img:hover img {
     filter: opacity(0.5);
     transition: 1s;
